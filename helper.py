@@ -6,7 +6,7 @@ import cv2
 
 # Start Dataset Helper Functions #
 def load_dataset():
-    data = pd.read_csv('dataset\\fer2013.csv') # read dataset file into Pandas DataFrame
+    data = pd.read_csv('../dataset/fer2013.csv') # read dataset file into Pandas DataFrame
     all_images_pixels = data['pixels'].tolist() # array of each images pixel data, in a list, comma seperated
     width, height = 48, 48 # dimensions of dataset image
     input_shape = (64, 64, 1) # network image input shape
